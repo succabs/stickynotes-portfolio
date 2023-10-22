@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
@@ -10,7 +11,8 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>Arttu Nikkilä - {pageTitle}</title>
+    <ViewTransitions />
   </head>
   <body>
     <Header />

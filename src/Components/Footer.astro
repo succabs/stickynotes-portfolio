@@ -6,6 +6,8 @@ import Social from './Social.astro';
 
 <style>
     footer {
+      border-top: 1px solid black;
+      padding-top: 1rem;
       display: flex;
       gap: 1rem;
       margin-top: 2rem;
@@ -13,7 +15,17 @@ import Social from './Social.astro';
   </style>
 
 <footer>
-    <Social platform="twitter" username="astrodotbuild" />
-    <Social platform="github" username="withastro" />
-    <Social platform="youtube" username="astrodotbuild" />
+  <p>Copyright Arttu Nikkilä 2023 - kaikki oikeudessa pidätetään.</p>
+    <a href="https://github.com/succabs">Github</a>
+    <a href="https://exercism.org/profiles/succabs">Exercism</a>
+    <p>artnikkila@gmail.com</p>
 </footer>
+
+<style>
+    a {
+      padding: 1rem;
+      color: white;
+      background-color: #4c1d95;
+      text-decoration: none;
+    }
+  </style>
