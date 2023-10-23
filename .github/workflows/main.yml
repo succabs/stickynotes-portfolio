@@ -14,8 +14,9 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         port: ${{ secrets.PORT }}
         script: |
-          pwd
           cd ~/home/art/Projects/funky-portfolio
+          export NVM_DIR=~/.nvm
+          source ~/.nvm/nvm.sh    
           git pull origin main
           npm install --only=prod
           npm run build --if-present
