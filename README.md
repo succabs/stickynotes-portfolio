@@ -19,6 +19,6 @@ If you feel like using this project yourself, here are some commands to help you
 
 ## 👀 What's next?
 
-- CI/CD to VPS with GitHub Actions
+- CI/CD to VPS with GitHub Actions (working)
 - Design
 - Content
