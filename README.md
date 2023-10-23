@@ -11,4 +11,13 @@ Still very much a work in progress.
 ## 👀 What's next?
 
 - Design
+- Icons from sun/moon to spray can / neon light
+- Navbar styling
+- paddings and margins
+- color scheme
+- footer styling
+- button styling
+- cards for projects & blog posts
+- blog post styling
+- tags link for blog front page
 - Content

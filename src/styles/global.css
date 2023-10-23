@@ -3,6 +3,31 @@ html {
   font-family: 'Exo 2 Variable', sans-serif;
 }
 
+
+.color-blue {
+  color: #00E2F7;
+}
+
+.color-red {
+  color: #FF321D;
+}
+
+.color-yellow {
+  color: #FFEA00;
+}
+
+.color-green {
+  color: #50D000;
+}
+
+.color-white {
+  color: #FDFCF8;
+}
+
+.color-black {
+  color: #0E0204;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
