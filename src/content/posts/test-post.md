@@ -1,7 +1,7 @@
 ---
-title: 'Designing My Portfolio: Capturing the JSRF Aesthetic'
+title: 'Designing My Portfolio'
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+description: 'The story of how Jet Set Radio Future met Neon Lights'
 author: 'Arttu Nikkilä'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
