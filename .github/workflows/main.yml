@@ -14,7 +14,7 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd ~/home/art/Projects/funky-portfolio
+          cd ~/Projects/funky-portfolio
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh    
           git pull origin main
