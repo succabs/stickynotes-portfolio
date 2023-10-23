@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
+    "@fontsource-variable/exo-2": "^5.0.16",
+    "@fontsource/bangers": "^5.0.17",
     "astro": "^3.3.2"
   }
 }
