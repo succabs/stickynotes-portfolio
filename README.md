@@ -1,17 +1,16 @@
-# 🎧 Funky Portfolio
+# 🎧 Funky Beats & Neon Lights
 
 This is a repository for my portfolio website. Created using Astro. No other frameworks were used.
 
-Continuous Deployment is made to my VPS with GitHub Actions.
+Continuous Deployment is made to my VPS with GitHub Actions on every push to main branch.
 
-The design style is heavily inspired by Jet Set Radio Future and neobrutalism.
+Still very much a work in progress. A project to tinker with when I am not too tired to code after work.
 
-Still very much a work in progress.
-
-## 👀 What's next?
+## 👀 What's next? (Mainly a vague to-do list for myself)
 
 - Design
 - Icons from sun/moon to spray can / neon light
+- Different elements like graffitis on JSRF
 - Navbar styling
 - paddings and margins
 - color scheme
