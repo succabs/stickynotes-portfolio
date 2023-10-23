@@ -1,8 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
+const githubRepoLink = 'https://github.com/succabs/funky-portfolio';
 ---
+
 <BaseLayout pageTitle={pageTitle}>
   <h2>Heya. Welcome to my website.</h2>
-  <p>The design of this portfolio is heavily inspider by Jet Set Radio Future and Neobrutalist web design.</p>
+  <p>This site is a work in progress.</p>
+  <p>Please come back later.</p>
+  <p>The design of this portfolio is heavily inspired by Jet Set Radio Future and Neobrutalist web design.</p>
+  
+  <p>Check out the source code of this site on <a href={githubRepoLink} target="_blank">GitHub</a>.</p>
 </BaseLayout>
