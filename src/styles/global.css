@@ -45,6 +45,8 @@ body {
   top:1rem;
   left: 6rem;
   text-align: center;
+  text-decoration: none;
+  color: #00E2F7;
 }
 
 .mainArea {
