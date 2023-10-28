@@ -3,7 +3,6 @@ html {
   font-family: 'Exo 2 Variable', sans-serif;
 }
 
-
 .color-blue {
   color: #00E2F7;
 }
@@ -31,12 +30,30 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
   line-height: 1.5;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.sitename {
+  font-family: 'Bangers', sans-serif;
+  font-size: 2.5rem;
+  display: block;
+  position: absolute;
+  top:1rem;
+  left: 6rem;
+  text-align: center;
+}
+
+.mainArea {
+  display:flex;
+  flex-direction: column;
+  max-width: 80ch;
+  margin:auto;
+  text-align: left;
+  padding: 1rem 1rem;
 }
 
 h1 {
@@ -46,7 +63,6 @@ h1 {
 }
 
 h2 {
-  text-decoration: underline #375a7f;
   text-decoration-thickness: 4px;
   text-underline-offset: 6px;
   font-size: 2.1em;
@@ -56,7 +72,9 @@ h2 {
 /* nav styles */
 .nav-bar {
   width:100%;
+  height: auto;
  border-bottom: 1px solid black;
+ padding: 1rem; /* Add some padding for spacing */
 }
 
 .hamburger {
@@ -77,11 +95,9 @@ h2 {
 .nav-links {
   width: 100%;
   top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
+  left: 5rem;
   display: none;
   margin: 0;
-  
 }
 
 .nav-links a {
@@ -95,7 +111,7 @@ h2 {
   margin: 0 13px;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover {
   background-color: #ff9776;
 }
 
@@ -136,21 +152,38 @@ h2 {
 @media screen and (min-width: 636px) {
 .nav-bar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: left;
   align-items: center;
-  padding: 0rem; /* Add some padding for spacing */
+
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+}
+
+.sitename {
+  display: block;
+  position: static;
 }
 
   .nav-links {
     display: block;
     position: static;
-    width: auto;
     background: none;
   }
 
   .nav-links a {
     display: inline-block;
-    margin: 0 1em;
+    padding: 0 1em;
+    margin:0;
+  }
+
+  .nav-links a:first-child {
+    margin-left:2rem;
   }
 
   .hamburger {

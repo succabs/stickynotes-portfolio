@@ -9,6 +9,12 @@
   #themeToggle {
     border: 0;
     background: none;
+    margin: 1rem 0;
+    position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding-top: 0;
+      padding-bottom: 0;
   }
   .sun {
     display: block; /* Display the sun icon by default */
@@ -22,14 +28,6 @@
   }
   :global(.dark) .moon {
     display: block; /* Display the moon icon in dark mode */
-  }
-
-  @media screen and (max-width: 636px) {
-    #themeToggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-    }
   }
 </style>
 
