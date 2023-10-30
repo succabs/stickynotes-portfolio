@@ -1,4 +1,4 @@
-# 🎧 Funky Beats & Neon Lights
+# 🎧 Sticky Notes Portfolio
 
 This is a repository for my portfolio website. Created using Astro. No other frameworks were used.
 

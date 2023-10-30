@@ -13,6 +13,9 @@
     "@astrojs/rss": "^3.0.0",
     "@fontsource-variable/exo-2": "^5.0.16",
     "@fontsource/bangers": "^5.0.17",
+    "@fontsource/comic-neue": "^5.0.8",
+    "@fontsource/permanent-marker": "^5.0.8",
+    "@fontsource/swanky-and-moo-moo": "^5.0.8",
     "astro": "^3.3.2"
   }
 }
