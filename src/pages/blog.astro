@@ -6,11 +6,10 @@ const allPosts = await getCollection("posts");
 const pageTitle = "Blog";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>... and my new Astro site!</h2>
+  <div class="mainArea">
+  <h2>Blog</h2>
 
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
-
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+From here you can find posts about various topics.
   <ul>
     {
       allPosts.map((post) => (
@@ -18,6 +17,7 @@ const pageTitle = "Blog";
       ))
     }
   </ul>
+</div>
 </BaseLayout>
 
 

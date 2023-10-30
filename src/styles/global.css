@@ -1,10 +1,10 @@
 html {
-  background-color: #f1f5f9;
+  background-color: #d4e0d6;
   font-family: 'Exo 2 Variable', sans-serif;
 }
 
 .color-blue {
-  color: #00E2F7;
+  color: #CDF5FD;
 }
 
 .color-red {
@@ -37,6 +37,17 @@ body {
   box-sizing: border-box;
 }
 
+.introduction {
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.introduction img {
+  max-width: 200px;
+  max-height:200px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
 .sitename {
   font-family: 'Bangers', sans-serif;
   font-size: 2.5rem;
@@ -53,7 +64,7 @@ body {
   display:flex;
   flex-direction: column;
   max-width: 80ch;
-  margin: 4rem auto;
+  margin: 4rem 2rem;
 
   text-align: left;
   padding: 1rem 1rem;
@@ -80,6 +91,9 @@ h2 {
   height: auto;
  padding: 1rem; /* Add some padding for spacing */
  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+ background-color: 
+ #A0E9FF
+ ; 
 }
 
 .hamburger {
@@ -239,6 +253,12 @@ footer a {
 
   .hamburger {
     display: none;
+  }
+
+  .mainArea {
+    max-width: 80ch;
+    margin: 4rem auto;
+
   }
 }
 
