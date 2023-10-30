@@ -9,12 +9,12 @@ Still very much a work in progress. A project to tinker with when I am not too t
 ## 👀 What's next? (Mainly a vague to-do list for myself)
 
 - Design
-- Icons to sun/moon
+- Better icons
 - Navbar styling (active links underlined)
 - paddings and margins?
-- color scheme
+- color scheme?
 - dark mode colors
-- cards for projects & blog posts
+- cards (notes) for projects & blog posts
 - blog post styling
 - tags link for blog front page
 - Content
