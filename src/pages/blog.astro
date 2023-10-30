@@ -6,17 +6,21 @@ const allPosts = await getCollection("posts");
 const pageTitle = "Blog";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <div class="mainArea">
-  <h2>Blog</h2>
 
-From here you can find posts about various topics.
-  <ul>
+  <div class="board">
+
+    <div class="note large centered color-yellow">
+      <h1>Blog</h1>
+      <p>This page contains my blog. From here you can find posts about various topics.</p>
+    </div>
+
+    <div class="row">
+
     {
       allPosts.map((post) => (
         <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
       ))
     }
-  </ul>
 </div>
 </BaseLayout>
 
