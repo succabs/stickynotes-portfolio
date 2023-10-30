@@ -1,5 +1,5 @@
 html {
-  background-color: #d4e0d6;
+  background-color: #ebebeb;
   font-family: 'Comic Neue', sans-serif;
 }
 
@@ -24,7 +24,7 @@ html {
 }
 
 .color-white {
-  background-color: #FDFCF8;
+  background-color: #ebebeb;
 }
 
 .color-black {
@@ -63,6 +63,14 @@ justify-content: space-between;
   color:#0E0204;
 }
 
+.small {
+  max-width: 40ch;
+}
+
+.large {
+  max-width: 80ch;
+}
+
 .mainArea {
   display:flex;
   flex-direction: column;
@@ -73,6 +81,15 @@ justify-content: space-between;
   padding: 1rem 1rem;
   
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.note {
+  text-align: left;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display:flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -128,9 +145,10 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0 13px;
+  color: #0E0204;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, a:active {
   background-color: #ff9776;
 }
 
@@ -181,10 +199,6 @@ h2 {
   font-size: 1.6rem;
 }
 
-.outlined-text {
-  color: #FFF; /* White text color */
-  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /* Bold black outline with multiple shadows */
-}
 footer {
   box-shadow: rgba(50, 50, 93, 0.25) 0px -30px 60px -12px, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px;
   display: flex;
@@ -255,6 +269,10 @@ footer {
     display: none;
   }
 
+  .note {
+    margin: 2rem auto;
+  }
+
   .mainArea {
     max-width: 80ch;
     margin: 2rem auto;
@@ -298,15 +316,4 @@ html.dark {
 
 .dark .xl-button {
   box-shadow: 0 0 1rem #FF321D; /* Neon pink box shadow */
-}
-
-
-@keyframes neon-pulse {
-  0% { text-shadow: 0 0 1rem #00FFFF; }
-  50% { text-shadow: 0 0 2rem #00FFFF; }
-  100% { text-shadow: 0 0 1rem #00FFFF; }
-}
-
-.dark .neon-text {
-  animation: neon-pulse 2s infinite; /* Neon text pulsating effect */
 }

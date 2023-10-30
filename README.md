@@ -9,13 +9,11 @@ Still very much a work in progress. A project to tinker with when I am not too t
 ## 👀 What's next? (Mainly a vague to-do list for myself)
 
 - Design
-- Icons from sun/moon to spray can / neon light
-- Different elements like graffitis on JSRF
-- Navbar styling
-- paddings and margins
+- Icons to sun/moon
+- Navbar styling (active links underlined)
+- paddings and margins?
 - color scheme
-- footer styling
-- button styling
+- dark mode colors
 - cards for projects & blog posts
 - blog post styling
 - tags link for blog front page
