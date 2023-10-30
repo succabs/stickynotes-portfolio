@@ -41,16 +41,6 @@ body {
   box-sizing: border-box;
 }
 
-.introduction {
-display:flex;
-flex-direction: row;
-justify-content: space-between;
-}
-.introduction img {
-  max-width: 50%;
-  object-fit: scale-down;
-}
-
 .sitename {
   font-family: 'Permanent Marker', sans-serif;
   font-size: 2.5rem;
@@ -63,33 +53,30 @@ justify-content: space-between;
   color:#0E0204;
 }
 
+.note {
+  text-align: left;
+  padding: 0rem 1rem 1rem;
+  margin: 1rem 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display:flex;
+  flex-direction: column;
+}
+
+.note h1 {
+  padding: 0.5rem 0rem;
+  margin: 0rem 0rem;
+}
+
+.centered {
+  margin: 2rem auto;
+
+  }
 .small {
   max-width: 40ch;
 }
 
 .large {
   max-width: 80ch;
-}
-
-.mainArea {
-  display:flex;
-  flex-direction: column;
-  max-width: 80ch;
-  margin: 2rem 2rem;
-
-  text-align: left;
-  padding: 1rem 1rem;
-  
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.note {
-  text-align: left;
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  display:flex;
-  flex-direction: column;
 }
 
 h1 {
@@ -125,7 +112,7 @@ h2 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: #0E0204;
 }
 
 .nav-links {
@@ -156,49 +143,6 @@ h2 {
   display: unset;
 }
 
-.s-button {
-  border: 4px solid #000; /* Bold black border */
-  background-color: #FFEA00; /* Bright orange background */
-  color: #000; /* White text color */
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  margin: 1rem 1rem;
-}
-.s-button:hover {
-  background-color: #FF9900; /* Brighter orange background on hover */
-  border-color: #FF9900; /* Match the border color to the background on hover */
-}
-
-.m-button {
-  border: 4px solid #000; /* Bold black border */
-  background-color: #00E2F7;
-  color: #000; /* White text color */
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  margin: 1rem 1rem;
-  font-size: 1.2rem;
-}
-
-.l-button {
-  border: 4px solid #000; /* Bold black border */
-  background-color: #50D000; /* Bright orange background */
-  color: #000; /* White text color */
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  margin: 1rem 1rem;
-  font-size: 1.4rem;
-}
-
-.xl-button {
-  border: 4px solid #000; /* Bold black border */
-  background-color: #FF321D; /* Bright orange background */
-  color: #000; /* White text color */
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  margin: 1rem 1rem;
-  font-size: 1.6rem;
-}
-
 footer {
   box-shadow: rgba(50, 50, 93, 0.25) 0px -30px 60px -12px, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px;
   display: flex;
@@ -213,7 +157,8 @@ footer {
   align-items: center;
   text-align: center;
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
+  flex-wrap: wrap;
 
 }
 .footer-links a {
@@ -224,13 +169,15 @@ footer {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+.board {
+  margin: 0rem 1rem;
+}
+
 @media screen and (min-width: 636px) {
 .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center;
-
 }
 
 .nav-items {
@@ -270,13 +217,20 @@ footer {
   }
 
   .note {
-    margin: 2rem auto;
+    margin: 2rem 2rem;
   }
+  .row {
+display: flex;
+flex-direction: row;
+justify-content:center;
+flex-wrap: wrap;
+  }
+.row .centered {
+    margin: 2rem 2rem;
+    }
 
-  .mainArea {
-    max-width: 80ch;
-    margin: 2rem auto;
-
+.centered {
+  margin: 2rem auto;
   }
 }
 
@@ -296,24 +250,4 @@ html.dark {
 
 .dark footer {
   border-top: 1px solid white;
-}
-
-.dark .neon-text {
-  text-shadow: 0 0 10px #00FFFF; /* Neon blue glow */
-}
-
-.dark .s-button {
-  box-shadow: 0 0 1rem #FFEA00; /* Neon pink box shadow */
-}
-
-.dark .m-button {
-  box-shadow: 0 0 1rem #00E2F7; /* Neon pink box shadow */
-}
-
-.dark .l-button {
-  box-shadow: 0 0 1rem #50D000; /* Neon pink box shadow */
-}
-
-.dark .xl-button {
-  box-shadow: 0 0 1rem #FF321D; /* Neon pink box shadow */
 }
