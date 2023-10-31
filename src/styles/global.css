@@ -34,12 +34,7 @@ html {
 }
 
 .clippy {
-  display: block;
-  position:absolute;
-  top:10rem;
-  right:-6rem;
-  width:200px;
-  transform: rotate(-0.1turn);
+  display: none;
 }
 
 body {
@@ -247,8 +242,12 @@ flex-wrap: wrap;
   }
 
 .clippy {
+  display: block;
+  position:absolute;
   top:10rem;
-  right:-5rem;
+  right:-6rem;
+  width:200px;
+  transform: rotate(-0.1turn);
 }
 }
 
