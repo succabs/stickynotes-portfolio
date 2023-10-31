@@ -1,8 +1,8 @@
 html {
   background-color: #ebebeb;
   font-family: 'Comic Neue', sans-serif;
-  overflow-x: hidden;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .color-blue {
@@ -45,6 +45,7 @@ html {
 body {
   margin: 0 auto;
   max-width: 100%;
+  overflow-x: hidden;
   line-height: 1.5;
 }
 
