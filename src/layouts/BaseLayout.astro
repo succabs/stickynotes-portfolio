@@ -1,26 +1,28 @@
 ---
-import Header from '../Components/Header.astro';
-import Footer from '../Components/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
-import '../styles/global.css';
-import '@fontsource/permanent-marker';
-import '@fontsource/comic-neue';
+import Header from "../Components/Header.astro";
+import Footer from "../Components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+import "../styles/global.css";
+import "@fontsource/permanent-marker";
+import "@fontsource/comic-neue";
 const { pageTitle } = Astro.props;
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Arttu Nikkilä - {pageTitle}</title>
 
     <ViewTransitions />
   </head>
   <body>
+    <img class="clippy" src="../Clippit.webp" alt="Clippy" />
     <Header />
     <slot />
     <Footer />

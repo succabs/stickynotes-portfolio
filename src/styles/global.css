@@ -31,10 +31,20 @@ html {
   background-color: #0E0204;
 }
 
+.clippy {
+  display: block;
+  position:absolute;
+  top:10rem;
+  right:-6rem;
+  width:200px;
+  transform: rotate(-0.1turn);
+}
+
 body {
   margin: 0 auto;
   max-width: 100%;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 * {
@@ -233,6 +243,11 @@ flex-wrap: wrap;
 .centered {
   margin: 2rem auto;
   }
+
+.clippy {
+  top:10rem;
+  right:-5rem;
+}
 }
 
 /* dark colors */
