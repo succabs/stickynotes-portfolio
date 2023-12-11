@@ -1,44 +1,42 @@
 ---
 title: 'Designing My Portfolio'
-pubDate: 2022-07-01
-description: 'The story of how Jet Set Radio Future met Neon Lights'
+pubDate: 2023-10-30
+description: 'Designing My Portfolio'
 author: 'Arttu Nikkilä'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+    url: 'https://www.brumleyprinting.com/wp-content/uploads/Post-it-notes_Getty492740892.jpg'
+    alt: 'Sticky notes'
+tags: ["design", "front-end", "learning"]
 ---
 
 ## Introduction
 
-Welcome to my portfolio website, where design and creativity converge. In this blog post, I'm excited to take you behind the scenes of the design process that brought this website to life. Inspired by the colorful, energetic world of Jet Set Radio Future (JSRF), this design journey has been a thrilling adventure. I'll walk you through the research, font choices, color palette, and other elements that went into creating this unique and vibrant site.
+Welcome to my journey of designing and styling my portfolio website. In this post, we'll dive into the creative process behind crafting a unique design that stands out in the realm of web development. While the technical aspects of building and deploying my site with Astro on my own VPS and GitHub Actions are important, this post primarily focuses on the aesthetics and design elements that make it distinct.
 
-## The JSRF Influence
+## The Sticky Notes Influence and Neobrutalism
 
-From the moment I embarked on this design project, the influence of Jet Set Radio Future was clear. The game's graffiti art, dynamic visuals, and urban energy became my guiding light. JSRF's bold, vibrant colors, and its celebration of street culture set the tone for my website's aesthetic.
+During the development of my portfolio, I explored numerous design ideas and color palettes. Eventually, I stumbled upon the concept of sticky notes. These small, everyday items intrigued me, as they offered a simple yet creative way to showcase my work. It was a departure from the conventional, as many developer and designer portfolios often felt like carbon copies or overly complex.
+
+The influence of neobrutalism also played a significant role in shaping the design. Neobrutalism's raw, minimalistic, and functional characteristics resonated with me, and I incorporated elements of it into my portfolio.
 
 ## Research and Inspiration
 
-Before diving into the design, research played a crucial role. I delved deep into the world of JSRF, revisiting the game, studying its art, and understanding its cultural references. This immersive research helped me capture the essence of the game's design style. It became the foundation for the creative decisions that followed.
+To make the sticky notes on my portfolio appear as though they were attached to a whiteboard, I delved into research to create the right visual effects. This involved experimenting with shadows, highlights, and subtle textures to achieve the desired effect.
 
 ## Choosing the Fonts
 
-Selecting fonts was a pivotal decision in bringing the JSRF vibe to the website. "Bangers" quickly became the top choice for headings, with its bold and graffiti-inspired style. To maintain readability and contrast, I paired it with "Lato" for body text, as its clean and modern look offered a perfect balance.
+Selecting the appropriate fonts was crucial in maintaining the sticky note aesthetic. For headings, I opted for "Permanent Marker," which exudes a handwritten charm. The body text font, "Comic Neue," complements the playful nature of sticky notes, ensuring that the content is easily readable and approachable.
 
 ## Crafting the Color Palette
 
-Creating a color palette that echoed JSRF's bold hues was a thrilling challenge. Bright blues, fiery reds, sunny yellows, and vivid greens found their place in the palette. These bold colors, combined with stark blacks and whites, set the stage for a website that's alive with energy and attitude.
+Crafting the color palette was a straightforward process. I drew inspiration from actual sticky notes. By using ready-made color palettes derived from images of sticky notes, I ensured a consistent and visually appealing color scheme that resonated with my vision.
 
 ## Backgrounds and Textures
 
-To capture the essence of JSRF's urban environment, I introduced textures reminiscent of graffiti and city streets. Subtle overlays of concrete and asphalt textures added depth and visual interest to the design. The use of street art-inspired elements helped tie everything together.
-
-## Animations and Interactivity
-
-Animations brought the site to life, mimicking the dynamic energy of JSRF. Subtle animations, like graffiti elements appearing on hover, added an interactive touch without overwhelming the user experience. It was a delightful challenge to create animations that enhanced the site's appeal.
+My portfolio's design remains clean and uncluttered. The background is a subtle off-white shade, allowing the colorful sticky notes to take center stage. These sticky notes, in various shades and shapes, appear as if they are "popping" off the background, creating a dynamic and engaging visual experience.
 
 ## Conclusion
 
-Designing my portfolio with the influence of JSRF has been an exhilarating journey. The vibrant colors, bold fonts, and street art-inspired visuals all come together to create a design that pays homage to the game's unique aesthetic while showcasing my work and skills. I hope this post has given you insights into the thought process behind the design, and I invite you to explore my portfolio to see the final result.
+In retrospect, the journey of designing my portfolio was an enjoyable and creative endeavor. The inspiration drawn from sticky notes and the influence of neobrutalism made this project unique and rewarding. It stands as a testament to the power of design to captivate and engage visitors in a fun and memorable way. This project has been one of the most delightful custom endeavors I've undertaken in a while, and I look forward to sharing it with the world.
 
-Thank you for joining me on this creative adventure, and I look forward to sharing more about my work and projects in the future.
+Thank you for joining me on this design exploration journey.

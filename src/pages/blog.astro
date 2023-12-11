@@ -6,18 +6,22 @@ const allPosts = await getCollection("posts");
 const pageTitle = "Blog";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>... and my new Astro site!</h2>
 
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+  <div class="board">
 
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-  <ul>
+    <div class="note large centered color-yellow">
+      <h1>Blog</h1>
+      <p>This page contains my blog. From here you can find posts about various topics.</p>
+    </div>
+
+    <div class="row">
+
     {
       allPosts.map((post) => (
         <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
       ))
     }
-  </ul>
+</div>
 </BaseLayout>
 
 
