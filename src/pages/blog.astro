@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../Components/BlogPost.astro';
 const allPosts = await getCollection("posts");
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 const pageTitle = "Blog";
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -11,7 +12,14 @@ const pageTitle = "Blog";
 
     <div class="note large centered color-yellow">
       <h1>Blog</h1>
-      <p>This page contains my blog. From here you can find posts about various topics.</p>
+      <p>This page has all the posts. Interested in specific content? Choose a tag to display posts that are related
+        to it!
+      </p>
+      <div class="tags">
+        {tags.map((tag) => (
+          <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+        ))}
+      </div>
     </div>
 
     <div class="row">
@@ -23,5 +31,25 @@ const pageTitle = "Blog";
     }
 </div>
 </BaseLayout>
+
+<style>
+  a {
+    color: #00539F;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 1.15em;
+    background-color: #F8FCFD;
+  }
+</style>
 
 
