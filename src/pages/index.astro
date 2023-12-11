@@ -6,9 +6,46 @@ const githubRepoLink = "https://github.com/succabs/funky-portfolio";
 
 <BaseLayout pageTitle={pageTitle}>
 
-    <div class="note large centered color-red">
-      <h1>Latests posts</h1>
-      <p>This section will display my latest blog posts.</p>
-    </div>
+  <div class="board">
+    <div class="row">
+
+  <div class="note small centered color-yellow">
+    <h1>Heya.</h1>
+
+    <img src="profile_pic.jpg" alt="Picture of me" />
   </div>
+
+  <div class="note small centered color-yellow">
+    <h1>Welcome to my website.</h1>
+    <p>
+      I am Arttu, a 27 years old developer from Jyväskylä. I am currently
+      employed in an eCommerce agency as a junior developer. Feel free to
+      look around!
+    </p>
+    <h1>-Arttu</h1>
+  </div>
+</div>
+
+<div class="note large centered color-green">
+  <h1>What is this site?</h1>
+  <p>This site works as my personal website and portfolio.</p>
+
+  <p>
+    In case you didn't notice, the design of this portfolio is heavily
+    inspired by sticky notes.
+  </p>
+
+  <p>
+    The source code is available on a <a
+      href={githubRepoLink}
+      target="_blank">GitHub repository</a
+    >.
+  </p>
+</div>
+
+<div class="note large centered color-red">
+  <h1>Latests posts</h1>
+  <p>This section will display my latest blog posts.</p>
+</div>
+</div>
 </BaseLayout>
