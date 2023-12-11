@@ -9,12 +9,11 @@ Still very much a work in progress. A project to tinker with when I am not too t
 ## 👀 What's next? (Mainly a vague to-do list for myself)
 
 - Design
-- Better icons
-- Navbar styling (active links underlined)
+- Navbar styling (active links underlined, hover color away)
 - paddings and margins?
-- color scheme?
-- dark mode colors
-- cards (notes) for projects & blog posts
+- different shadowing
+- dark mode colors fixing (mainly on blog post)
+- better cards (notes) for projects & blog posts
 - blog post styling
-- tags link for blog front page
 - Content
+- tags link for blog front page DONE

@@ -1,12 +1,12 @@
 ---
-title: 'Designing My Portfolio'
+title: 'Designing The Portfolio'
 pubDate: 2023-10-30
-description: 'Designing My Portfolio'
+description: 'Find out how the idea behind all this took its current form'
 author: 'Arttu Nikkilä'
 image:
-    url: 'https://www.brumleyprinting.com/wp-content/uploads/Post-it-notes_Getty492740892.jpg'
+    imgUrl: 'https://www.brumleyprinting.com/wp-content/uploads/Post-it-notes_Getty492740892.jpg'
     alt: 'Sticky notes'
-tags: ["design", "front-end", "learning"]
+tags: ["design", "front-end"]
 ---
 
 ## Introduction

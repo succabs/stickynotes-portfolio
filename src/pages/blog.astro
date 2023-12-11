@@ -26,16 +26,15 @@ const pageTitle = "Blog";
 
     {
       allPosts.map((post) => (
-        <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
+        <BlogPost url={`/posts/${post.slug}/`} 
+        postdata={post.data} 
+        pubDate={post.data.pubDate} 
+        />
       ))
     }
 </div>
 </BaseLayout>
-
 <style>
-  a {
-    color: #00539F;
-  }
 
   .tags {
     display: flex;
@@ -48,7 +47,6 @@ const pageTitle = "Blog";
     border-radius: .5em;
     padding: .5em 1em;
     font-size: 1.15em;
-    background-color: #F8FCFD;
   }
 </style>
 

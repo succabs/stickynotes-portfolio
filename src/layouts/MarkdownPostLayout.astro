@@ -5,13 +5,12 @@ const { frontmatter } = Astro.props;
 <BaseLayout pageTitle={frontmatter.title}>
   <div class="board">
   <div class="note centered large">
-  <h1><em>{frontmatter.description}</em></h1>
+    <h1><em>{frontmatter.title}</em></h1>
+  <h2>{frontmatter.description}</h2>
   <p>Written by: {frontmatter.author}</p>
   <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
 
-
-
-  <img src={frontmatter.image.url} width="100%" alt={frontmatter.image.alt} />
+  <img src={frontmatter.image.imgUrl} width="100%" alt={frontmatter.image.alt} />
 
   <div class="tags">
     {frontmatter.tags.map((tag) => (

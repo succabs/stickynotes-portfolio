@@ -1,9 +1,57 @@
 ---
-const { title, url } = Astro.props
+const { postdata, url, pubDate } = Astro.props
+
+function formatDate(date) {
+  if (date instanceof Date) {
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = date.getFullYear();
+    return `${day}.${month}.${year}`;
+  } else {
+    const parsedDate = new Date(date);
+    return formatDate(parsedDate);
+  }
+}
+
+const formattedPubDate = formatDate(pubDate);
 ---
-<div class="note small centered color-yellow">
 
-
-    <h1>{title}</h1>
-    <a href={url}>Click here to read</a>
+  <div class="note small centered color-yellow">
+    <img src={postdata.image.imgUrl} width="100%" height="200px" alt={postdata.image.alt} />
+    <div class="nameanddesc">
+      <h1>{postdata.title}</h1>
+      <p>{postdata.description}</p>
+      <a href={url}>Click here to read</a>
+    </div>
+    <div class="readtimeplusdate">
+    <p>3min read</p>
+    <p>{formattedPubDate}</p>
+  </div>  
   </div>
+
+  <style>
+
+    .nameanddesc {
+      padding: 0 0.5rem;
+    }
+
+    .readtimeplusdate {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 0.5rem;
+    }
+
+    .readtimeplusdate p {
+      margin-bottom: 0px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    .note {
+      padding: 0px;
+    }
+
+  </style>

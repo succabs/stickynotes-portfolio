@@ -28,7 +28,10 @@ const { posts } = Astro.props;
     <p>Posts tagged with {tag}. <a href={`/blog/`}>Go back to all posts</a>.</p>
   </div>
     <div class="row">
-        { posts.map((post) => <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />) }
+        { posts.map((post) =>         <BlogPost url={`/posts/${post.slug}/`} 
+        postdata={post.data} 
+        pubDate={post.data.pubDate} 
+        />) }
     </div>
   </div>
 </BaseLayout>
