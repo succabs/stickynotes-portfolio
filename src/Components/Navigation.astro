@@ -1,12 +1,25 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
+
+export interface Props {
+  activeNav?: "projects" | "index" | "skills" | "blog";
+}
+
+const { activeNav } = Astro.props;
+
 ---
 <div class="nav-items">
-<a class="sitename" href="/">Arttu.pro</a>
+<a class={currentPath === "" ? "active sitename" : "sitename"} href="/">Arttu.pro</a>
 <div class="nav-links">
-    <a  href="/projects/">Projects</a>
-    <a href="/skills/">Skills</a>
-    <a href="/blog/">Blog</a>
+    <a class={currentPath === "projects" ? "active" : ""} href="/projects">Projects</a>
+    <a class={currentPath === "skills" ? "active" : ""} href="/skills">Skills</a>
+    <a class={currentPath === "blog" ? "active" : ""} href="/blog">Blog</a>
   </div>
 </div>
+
+<style>
+.active {
+  text-decoration: underline;
+}
+</style>
