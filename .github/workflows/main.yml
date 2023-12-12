@@ -15,8 +15,6 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd ~/Projects/stickynotes-portfolio
-          export NVM_DIR=~/.nvm
-          source ~/.nvm/nvm.sh    
           git pull origin main
           npm install --only=prod
           npm run build --if-present
